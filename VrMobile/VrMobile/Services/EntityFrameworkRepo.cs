@@ -98,10 +98,48 @@ namespace VrMobile.DAL.Services.Services
                  options.ColumnPrimaryKeyExpression = customer => customer.IdCustomer);
 
             }
-           
 
-            //_dbContext.BulkMerge<TEntity>(entities, options => options.IncludeGraph = true);
-            //_dbContext.BulkSaveChanges();
+            if (entity is Products)
+            {
+                _dbContext.BulkMerge<Products>(entities, options =>
+                 options.ColumnPrimaryKeyExpression = product => product.IdProduct);
+
+            }
+
+            if (entity is Invoices)
+            {
+
+                _dbContext.BulkMerge<Invoices>(entities, options =>
+                 options.ColumnPrimaryKeyExpression = invoice => invoice.IdInvoice);
+
+            }
+
+            if (entity is InvoiceDetails)
+            {
+
+                _dbContext.BulkMerge<InvoiceDetails>(entities, options =>
+                 options.ColumnPrimaryKeyExpression = d => d.Id);
+
+            }
+
+
+            if (entity is VendorVisits)
+            {
+
+                _dbContext.BulkMerge<VendorVisits>(entities, options =>
+                 options.ColumnPrimaryKeyExpression = visit => visit.IdVendorVisit);
+
+            }
+
+            if (entity is DeliveryOrders)
+            {
+
+                _dbContext.BulkMerge<DeliveryOrders>(entities, options =>
+                 options.ColumnPrimaryKeyExpression = delivery => delivery.IdDelivery);
+
+            }
+
+      
             return 1;
         }
 
