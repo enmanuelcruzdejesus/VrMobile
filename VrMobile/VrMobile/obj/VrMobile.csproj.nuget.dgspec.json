@@ -50,6 +50,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Polly": {
+              "target": "Package",
+              "version": "[5.8.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
