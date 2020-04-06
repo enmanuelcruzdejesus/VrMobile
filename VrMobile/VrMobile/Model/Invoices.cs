@@ -1,7 +1,8 @@
 ﻿
-using SQLite;
+
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,9 +10,8 @@ namespace VrMobile.Models
 {
     public class Invoices
     {
-        [PrimaryKey]
-        [AutoIncrement]
-
+       
+        [Key]
         public int IdInvoice { get; set; }
         public string IdInvoiceRef { get; set; }
         public int IdVendor { get; set; }

@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -10,8 +11,8 @@ namespace VrMobile.Models
 
     public class SalesOrdersDetail
     {
-        [PrimaryKey]
-        [AutoIncrement]
+        
+        [Key]
         public int Id { get; set; }
 
 
@@ -20,8 +21,8 @@ namespace VrMobile.Models
 
         public int IdOrder { get; set; }
 
-        [Ignore]
-        public int SalesOrdersId { get; set; }
+
+       
 
         public int IdItem { get; set; }
         public int LineNum { get; set; }
