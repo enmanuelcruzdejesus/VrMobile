@@ -25,7 +25,7 @@ namespace VrMobile
 
 
         bool _isLogin = false;
-        //Database _database;
+      
       
        
 
