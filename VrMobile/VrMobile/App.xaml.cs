@@ -2,9 +2,11 @@
 using VrMobile.DAL.Services;
 using VrMobile.Models;
 using VrMobile.Services;
+using VrMobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamCore.Services;
+using XamCore.Utils.Services;
 
 namespace VrMobile
 {
@@ -12,9 +14,10 @@ namespace VrMobile
     {
 
 
-        string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}";
+        string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}/{2}";
 
         private Database _db;
+        RestApiService _restApi;
 
 
         string _uri = null;
@@ -83,12 +86,29 @@ namespace VrMobile
             }
         }
 
+        public RestApiService RestApi
+        {
+            get
+            {
+                if (_restApi == null)
+                {
+                    _restApi = new RestApiService(new ResilienceHttpClient(BASE_URL));
+
+                }
+
+                return _restApi;
+            }
+        }
+
+
+
+
 
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CustomerPage();
         }
 
         protected override void OnStart()
