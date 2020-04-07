@@ -5,6 +5,7 @@ using VrMobile.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamCore.Services;
+using XamCore.Utils.Services;
 
 namespace VrMobile
 {
@@ -15,6 +16,7 @@ namespace VrMobile
         string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}";
 
         private Database _db;
+        private RestApiService _restApi;
 
 
         string _uri = null;
@@ -80,6 +82,17 @@ namespace VrMobile
                     _db = new Database(DbPath);
 
                 return _db;
+            }
+        }
+
+        public RestApiService RestApi
+        {
+            get
+            {
+               if(_restApi == null)
+                    _restApi = new RestApiService(new ResilienceHttpClient(Uri));
+
+                return _restApi;
             }
         }
 

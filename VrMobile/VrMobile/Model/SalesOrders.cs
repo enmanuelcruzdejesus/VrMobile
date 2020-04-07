@@ -27,7 +27,8 @@ namespace VrMobile.Models
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
         public decimal TotalAmt { get; set; }
-        public string Status { get; set; }
+        public string TranStatus { get; set; }
+        public int Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
 

@@ -22,7 +22,8 @@ namespace VrMobile.Models
         public decimal TotalAmt { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
-
+        public string TranStatus { get; set; }
+        public int Status { get; set; }
 
   
         public Invoices Invoice { get; set; }
