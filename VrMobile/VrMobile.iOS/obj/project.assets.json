@@ -9358,33 +9358,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/enmanuelcruz/.nuget/packages/": {}
+    "C:\\Users\\marid\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile.iOS/VrMobile.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\marid\\OneDrive\\Escritorio\\VrMobile\\VrMobile\\VrMobile.iOS\\VrMobile.iOS.csproj",
       "projectName": "VrMobile.iOS",
-      "projectPath": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile.iOS/VrMobile.iOS.csproj",
-      "packagesPath": "/Users/enmanuelcruz/.nuget/packages/",
-      "outputPath": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile.iOS/obj/",
+      "projectPath": "C:\\Users\\marid\\OneDrive\\Escritorio\\VrMobile\\VrMobile\\VrMobile.iOS\\VrMobile.iOS.csproj",
+      "packagesPath": "C:\\Users\\marid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marid\\OneDrive\\Escritorio\\VrMobile\\VrMobile\\VrMobile.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/enmanuelcruz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\marid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj": {
-              "projectPath": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj"
+            "C:\\Users\\marid\\OneDrive\\Escritorio\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj": {
+              "projectPath": "C:\\Users\\marid\\OneDrive\\Escritorio\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj"
             }
           }
         }

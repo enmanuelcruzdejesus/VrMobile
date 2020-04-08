@@ -22,9 +22,16 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Utils\" />
-    <Folder Include="Views\" />
-    <Folder Include="ViewModel\" />
     <Folder Include="Services\" />
     <Folder Include="Utils\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\OrdersToDeliverPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\OrderToDeliverDetailedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

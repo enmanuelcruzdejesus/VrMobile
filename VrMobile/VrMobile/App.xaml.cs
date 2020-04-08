@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamCore.Services;
 using XamCore.Utils.Services;
+using VrMobile.Views;
 
 namespace VrMobile
 {
@@ -101,8 +102,11 @@ namespace VrMobile
 
         {
             InitializeComponent();
+            CurrentUser = new Users();
+            CurrentUser.IdUser = 1;
 
-            MainPage = new MainPage();
+            
+            MainPage = new OrdersToDeliverPage();
         }
 
         protected override void OnStart()

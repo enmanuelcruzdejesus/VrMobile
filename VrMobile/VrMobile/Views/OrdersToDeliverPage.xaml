@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VrMobile.Views.OrdersToDeliverPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista de facturas asignadas a repartir"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="StartAndExpand" />
+            <!--<ListView ItemsSource="{Binding InvoicesAssigned}"
+                      x:Name="listInvoicesToDeliver">
+                <ListView.Header>
+                    <ContentView Padding="30">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Lista de facturas asignadas a repartir"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="StartAndExpand" />
+                            <Button Text="Ordenar segun ruta recomendada" 
+                                    Command="{Binding SortListByBestRouteCommand}" 
+                                    Style="{StaticResource buttonStyle}"></Button>
+                        </StackLayout>
+                    </ContentView>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Menu"/>
+                                <MenuItem Text="Entregar pedido"
+                                       Command="{Binding Path=BindingContext.DeliverOrderCommand, Source={x:Reference listInvoicesToDeliver}}"
+                                       CommandParameter="{Binding .}"/>
+                                <MenuItem Text="Ir al mapa"
+                                       Command="{Binding Path=BindingContext.GoToMapCommand, Source={x:Reference listInvoicesToDeliver}}"
+                                       CommandParameter="{Binding .}"/>
+                            </ViewCell.ContextActions>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding CompanyName}"></Label>
+                                <Label Text="{Binding CreatedDate}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView> -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
