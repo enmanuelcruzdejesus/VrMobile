@@ -25,3 +25,7 @@ C:/Users/ecruz/source/repos/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.dll
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/ref/VrMobile.dll
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.pdb
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/InvoicePage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/SettingsPage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/VendorVisitPage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/VendorVisitPageDetail.xaml.g.cs
