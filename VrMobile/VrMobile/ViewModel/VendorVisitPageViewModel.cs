@@ -12,7 +12,7 @@ namespace VrMobile.ViewModel
             get
             {
                 var app = (App)App.Current;
-                var visits = app.Db.VendorVisits.GetAll().ToList();
+                var visits = app.Db.VendorVisits.GetLoadRerefence("Customer").ToList();
                 return visits;
             }
         }

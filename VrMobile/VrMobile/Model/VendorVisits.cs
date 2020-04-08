@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -22,5 +23,8 @@ namespace VrMobile.Models
         public decimal Longitude { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
+
+        [ForeignKey("IdCustomer")]
+        public virtual Customers Customer { get; set; }
     }
 }

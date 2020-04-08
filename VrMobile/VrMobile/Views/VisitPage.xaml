@@ -4,6 +4,10 @@
              x:Class="VrMobile.Views.VisitPage"
              Title="Visitas"
              Padding="5,10,5,0">
+
+     <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="saveToolBarItem" Text="Ordendar" Command="{Binding SaveCommand}"/>
+    </ContentPage.ToolbarItems>
    
     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
            <Grid.RowDefinitions>
@@ -23,16 +27,34 @@
                    Placeholder="Search here to Filter"
                    />
 
-        <ListView x:Name="visitListView" Grid.Row="1" Grid.Column="0">
+        <ListView x:Name="visitListView" Grid.Row="1" Grid.Column="0" ItemTapped="visitListViewItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                       <Label Text="{Binding IdVendorVisit}" />
-                       <Label Text="{Binding IdCustomer}" />
-                      </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
+                   <ViewCell>
+                       <ViewCell.ContextActions>
+                                <MenuItem x:Name="acceptMenuItem" Text="Autorizar" CommandParameter="{Binding .}" />
+                                <MenuItem x:Name="cancelMenuItem" Text="Rechazar" CommandParameter="{Binding .}" IsDestructive="True"/>
+                       </ViewCell.ContextActions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="70"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Customer.CompanyName}" Style="{StaticResource titleLabelStyle}" />
+                            <Label Grid.Row="0" Grid.Column="1" XAlign="End" FontAttributes="Bold,Italic" HorizontalOptions="FillAndExpand" Text="{Binding CreatedDate}" Style="{StaticResource detailLabelSytle}"/>
+                            <!--<Label Grid.Row="1" Grid.Column="0" Text="{Binding AuthDetail1}" Style="{StaticResource detailLabelSytle}"/>
+                            <Label Grid.Row="2" Grid.Column="0" Text="{Binding Comments}"  Style="{StaticResource detailLabelSytle}"/>
+                            <Label Grid.Row="3" Grid.Column="0" Text="{Binding MoreDetail}" Style="{StaticResource detailLabelSytle}"/>-->
+                        </Grid>
+                            
+                   </ViewCell>
+                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </Grid>

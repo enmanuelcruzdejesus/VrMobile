@@ -109,8 +109,16 @@ namespace VrMobile
                 IdRole = 2
 
             };
+         
 
-            MainPage = new MainVendorPage();
+            if(_currentUser.IdRole == 2)
+            {
+                MainPage = new MainVendorPage();
+
+            }
+          
+
+       
         }
 
         protected override void OnStart()
