@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj": {}
+    "C:\\Users\\marid\\OneDrive\\Escritorio\\prueba2\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj": {}
   },
   "projects": {
-    "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj": {
+    "C:\\Users\\marid\\OneDrive\\Escritorio\\prueba2\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj",
+        "projectUniqueName": "C:\\Users\\marid\\OneDrive\\Escritorio\\prueba2\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj",
         "projectName": "VrMobile",
-        "projectPath": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/VrMobile.csproj",
-        "packagesPath": "/Users/enmanuelcruz/.nuget/packages/",
-        "outputPath": "/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/",
+        "projectPath": "C:\\Users\\marid\\OneDrive\\Escritorio\\prueba2\\VrMobile\\VrMobile\\VrMobile\\VrMobile.csproj",
+        "packagesPath": "C:\\Users\\marid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marid\\OneDrive\\Escritorio\\prueba2\\VrMobile\\VrMobile\\VrMobile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/enmanuelcruz/.config/NuGet/NuGet.Config"
+          "C:\\Users\\marid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,7 +88,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
