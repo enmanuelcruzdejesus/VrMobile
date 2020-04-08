@@ -150,11 +150,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ventasrancherasdb.db3" />
     <BundleResource Include="Resources\clientes.png" />
     <BundleResource Include="Resources\user_male.png" />
     <BundleResource Include="Resources\stock.png" />
     <BundleResource Include="Resources\shoppingcarticon.png" />
     <BundleResource Include="Resources\settingsicon.png" />
+    <BundleResource Include="Resources\ventasrancherasdb.db3" />
   </ItemGroup>
 </Project>
