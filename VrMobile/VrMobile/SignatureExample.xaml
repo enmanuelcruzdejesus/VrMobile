@@ -1,5 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VrMobile.SignatureExample">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Signature"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="VrMobile.SignatureExample">
+    <StackLayout>
+        <forms:SignaturePadView
+            x:Name="Sign"
+            StrokeWidth="3"
+            WidthRequest="280"
+            HeightRequest="260"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Text="Convertir"
+            Clicked="Convertir"
+            />
+        <Label
+            x:Name="lbl"/>
+    </StackLayout>
 </ContentPage>

@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VrMobile",
+    "\\VrMobile\\VrMobile"
   ],
+  "SelectedNode": "\\VrMobile\\VrMobile\\SignatureExample.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
