@@ -138,6 +138,9 @@
     <PackageReference Include="Z.EntityFramework.Extensions.EFCore">
       <Version>3.0.62</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>2.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

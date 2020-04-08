@@ -102,6 +102,13 @@ namespace VrMobile
 
         {
             InitializeComponent();
+            _currentUser = new Users()
+            {
+                IdUser = 1,
+                UserName = "EnmanuelCruz",
+                IdRole = 2
+
+            };
 
             MainPage = new MainVendorPage();
         }

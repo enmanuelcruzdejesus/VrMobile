@@ -9,7 +9,7 @@ namespace VrMobile.Views
         public MainVendorPage()
         {
 
-            this.Children.Add(new NavigationPage(new VendorVisitPage()) { Title = "Pedidos", Icon = "clientes" });
+            this.Children.Add(new NavigationPage(new VisitPage()) { Title = "Visitas", Icon = "clientes" });
             this.Children.Add(new NavigationPage(new InvoicePage()) { Title = "Facturas", Icon = "shoppingcarticon" });
             this.Children.Add(new NavigationPage(new SettingsPage()) { Title = "Configuraciones", Icon = "settingsicon" });
         }

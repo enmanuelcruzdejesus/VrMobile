@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace VrMobile.Views
 {
-    public partial class VendorVisitPageDetail : ContentPage
+    public partial class VisitDetailPage : ContentPage
     {
-        public VendorVisitPageDetail()
+        public VisitDetailPage()
         {
             InitializeComponent();
         }
