@@ -21,6 +21,8 @@ namespace VrMobile.Services
             return recordsAffected;
         }
 
+
+
         public async Task<int> SyncProducts(string id)
         {
             var app = (App)App.Current;

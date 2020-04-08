@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VrMobile.Views.VendorVisitPage">
+
+    <ListView x:Name="visitsListView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <ListView.ItemTemplate>
+          <DataTemplate>
+              <TextCell Text="{Binding IdVisit}" Detail="{Binding IdCustomer}"></TextCell>
+          </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

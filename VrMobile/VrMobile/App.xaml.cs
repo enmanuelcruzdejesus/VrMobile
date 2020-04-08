@@ -2,6 +2,7 @@
 using VrMobile.DAL.Services;
 using VrMobile.Models;
 using VrMobile.Services;
+using VrMobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamCore.Services;
@@ -14,6 +15,7 @@ namespace VrMobile
 
 
         string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}/{2}";
+
 
         private Database _db;
         private RestApiService _restApi;
@@ -46,8 +48,7 @@ namespace VrMobile
 
 
 
-        //public int Cia { get { return _currentUser.cia; } }
-        //public string DescripSucursal { get; private set; }
+     
         public Users CurrentUser
         {
             get
@@ -98,10 +99,11 @@ namespace VrMobile
 
 
         public App()
+
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new VendorVisitPage();
         }
 
         protected override void OnStart()

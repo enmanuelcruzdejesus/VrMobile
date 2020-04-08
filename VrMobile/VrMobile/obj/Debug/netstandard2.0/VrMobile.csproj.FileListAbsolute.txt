@@ -17,7 +17,6 @@ C:/Users/ecruz/source/repos/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/bin/Debug/netstandard2.0/ref/VrMobile.dll
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/bin/Debug/netstandard2.0/VrMobile.pdb
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/App.xaml.g.cs
-/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.AssemblyInfoInputs.cache
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.AssemblyInfo.cs
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/XamlC.stamp
@@ -25,3 +24,7 @@ C:/Users/ecruz/source/repos/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/ref/VrMobile.dll
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.pdb
 /Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/VrMobile.csprojAssemblyReference.cache
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/CategoryPage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/OrderPage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/ShoppingCardPage.xaml.g.cs
+/Users/enmanuelcruz/Projects/VrMobile/VrMobile/VrMobile/obj/Debug/netstandard2.0/Views/VendorVisitPage.xaml.g.cs
