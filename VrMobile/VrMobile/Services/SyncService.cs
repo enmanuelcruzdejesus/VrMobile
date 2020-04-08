@@ -9,7 +9,7 @@ namespace VrMobile.Services
 
 
 
-        public async Task<int> SyncCustomers(string id)
+        public static async Task<int> SyncCustomers(string id)
         {
             var app = (App)App.Current;
             var data = await app.RestApi.DownloadCustomers(id);
@@ -23,7 +23,7 @@ namespace VrMobile.Services
 
 
 
-        public async Task<int> SyncProducts(string id)
+        public static async Task<int> SyncProducts(string id)
         {
             var app = (App)App.Current;
             var data = await app.RestApi.DownloadProducts(id);
@@ -37,7 +37,7 @@ namespace VrMobile.Services
         }
 
 
-        public async Task<int> SyncInvoices(string id)
+        public static async Task<int> SyncInvoices(string id)
         {
             var app = (App)App.Current;
             var data = await app.RestApi.DownloadInvoices(id);
@@ -63,7 +63,7 @@ namespace VrMobile.Services
 
 
 
-        public async Task<int> SyncVendorVistis(string id)
+        public static async Task<int> SyncVendorVistis(string id)
         {
             var app = (App)App.Current;
             var data = await app.RestApi.DownloadVendorVisits(id);
@@ -78,7 +78,7 @@ namespace VrMobile.Services
 
 
 
-        public async Task<int> SyncDeliveryOrders(string id)
+        public static async Task<int> SyncDeliveryOrders(string id)
         {
             var app = (App)App.Current;
             var data = await app.RestApi.DownloadDeliverOrders(id);
@@ -91,7 +91,7 @@ namespace VrMobile.Services
             return recordsAffected;
         }
 
-        public  async Task<int> SyncSalesOrders()
+        public static async Task<int> SyncSalesOrders()
         {
             var app = (App)App.Current;
             var data = app.Db.SalesOrders.GetLoadRerefence(o => o.Status == 2, "Detail").ToList();
@@ -119,7 +119,7 @@ namespace VrMobile.Services
         }
 
 
-        public async Task<int> SyncPayments()
+        public static async Task<int> SyncPayments()
         {
             var app = (App)App.Current;
             var data = app.Db.Payments.Get(p => p.Status == 2).ToList();

@@ -138,6 +138,9 @@
     <PackageReference Include="Z.EntityFramework.Extensions.EFCore">
       <Version>3.0.62</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>2.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -147,6 +150,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\clientes.png" />
+    <BundleResource Include="Resources\user_male.png" />
+    <BundleResource Include="Resources\stock.png" />
+    <BundleResource Include="Resources\shoppingcarticon.png" />
+    <BundleResource Include="Resources\settingsicon.png" />
     <BundleResource Include="Resources\ventasrancherasdb.db3" />
   </ItemGroup>
 </Project>

@@ -24,5 +24,8 @@ namespace VrMobile.Models
         public decimal Amount { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
+
+
     }
+
 }

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="VrMobile.Views.SettingsPage">
+    <StackLayout Padding="0,20,0,0">
+            <TableView Intent="Settings" x:Name="settingsTableView" HasUnevenRows="true">
+                <TableRoot >
+                    <TableSection>
+                      
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <controls:CircleImage Source="user_male.png" Aspect="AspectFill" HorizontalOptions="Start">
+                                    <controls:CircleImage.WidthRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="Android, iOS">55</On>
+                                            <On Platform="WinPhone">75</On>
+                                        </OnPlatform>
+                                    </controls:CircleImage.WidthRequest>
+
+                                    <controls:CircleImage.HeightRequest>
+                                        <OnPlatform x:TypeArguments="x:Double">
+                                            <On Platform="Android, iOS">55</On>
+                                            <On Platform="WinPhone">75</On>
+                                        </OnPlatform>
+                                    </controls:CircleImage.HeightRequest>
+                                </controls:CircleImage>
+                                <Label x:Name="lblUser" Text="{Binding UserName}" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Cuenta">
+                        <SwitchCell x:Name="keepLogInSwitch" Text="Guardar Contraseña" On="{Binding Settings.AllowKeepLog}" />
+                        <EntryCell x:Name="emailEntryCell" Label="Correo Electronico" Text="{Binding Settings.Email}"/>
+                        <ViewCell>
+                            <Button x:Name="btnSingOut" Text="Cerrar Sesion" TextColor="Red" Command="{Binding LogOutCommand}" />
+                        </ViewCell>
+                    </TableSection>
+
+                    <TableSection Title="Logs">
+                         <ViewCell>
+                            <StackLayout>
+                                <Editor x:Name="syncLogEditor" Text="{Binding SyncLog,Mode=TwoWay}"   HeightRequest="150" HorizontalOptions="FillAndExpand"/>
+                                <ProgressBar x:Name="MainProgressBar" WidthRequest="300" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <Button x:Name="btnSync" Text="Sincronizar" HorizontalOptions="FillAndExpand" Command="{Binding SyncCommand}"/>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+</ContentPage>

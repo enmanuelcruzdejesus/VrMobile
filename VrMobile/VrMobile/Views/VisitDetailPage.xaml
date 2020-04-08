@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VrMobile.Views.VisitDetailPage"
+             Padding="5,20,5,0"
+             Title="Detalle" >
+   <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Visita" Style="{StaticResource titleLabel2Style}"/>
+                <Entry x:Name="idvisitEntry" IsEnabled="False" Text="{Binding IdVisit}" Style="{StaticResource entryStyle}"/>
+
+                <Label Text="Compañia" Style="{StaticResource titleLabel2Style}"/>
+                <Entry x:Name="companyNameEntry" IsEnabled="False"  Text="{Binding CompanyName}" Style="{StaticResource entryStyle}"/>
+
+                
+                <Label Text="Fecha solicitud" Style="{StaticResource titleLabel2Style}" />
+                <Entry x:Name="requestDateEntry" IsEnabled="False" Text="{Binding VisitDate}" Style="{StaticResource entryStyle}"/>
+
+                <Label Text="Ciudad" Style="{StaticResource titleLabel2Style}"/>
+                <Entry x:Name="cityEntry" IsEnabled="False"  Text="{Binding City}" Style="{StaticResource entryStyle}"/>
+
+                  <Label Text="Direccion" Style="{StaticResource titleLabel2Style}"/>
+                <Entry x:Name="addressEntry" IsEnabled="False"  Text="{Binding Address}" Style="{StaticResource entryStyle}"/>
+
+                <Button x:Name="btnAccept" Text="Ver Ruta" Style="{StaticResource buttonStyle}" Command="{Binding AcceptCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+</ContentPage>

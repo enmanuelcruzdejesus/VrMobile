@@ -2,6 +2,7 @@
 using VrMobile.DAL.Services;
 using VrMobile.Models;
 using VrMobile.Services;
+using VrMobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamCore.Services;
@@ -101,8 +102,23 @@ namespace VrMobile
 
         {
             InitializeComponent();
+            _currentUser = new Users()
+            {
+                IdUser = 1,
+                UserName = "EnmanuelCruz",
+                IdRole = 2
 
-            MainPage = new MainPage();
+            };
+         
+
+            if(_currentUser.IdRole == 2)
+            {
+                MainPage = new MainVendorPage();
+
+            }
+          
+
+       
         }
 
         protected override void OnStart()
