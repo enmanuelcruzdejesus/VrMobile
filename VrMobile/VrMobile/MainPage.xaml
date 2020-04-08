@@ -6,11 +6,10 @@
              mc:Ignorable="d"
              x:Class="VrMobile.MainPage">
 
-    <StackLayout>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+       <Button x:Name="btnSync" Text="Sincronization" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+       <Button x:Name="btnPrint" Text="Print" HorizontalOptions="Center" VerticalOptions="Center"></Button>
     </StackLayout>
 
 </ContentPage>

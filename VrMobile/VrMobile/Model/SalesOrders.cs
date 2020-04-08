@@ -3,11 +3,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace VrMobile.Models
 {
+    
     public class SalesOrders
     {
         [Key]
@@ -32,6 +34,8 @@ namespace VrMobile.Models
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
 
-        public List<SalesOrdersDetail> SalesOrdersDetails { get; set; }
+
+
+        public virtual ICollection<SalesOrdersDetail> Detail { get; set; }
     }
 }

@@ -115,7 +115,7 @@ namespace VrMobile.DAL.Services
         }
 
 
-        public IRepository<SalesOrdersDetail> SalesDetails
+        public IRepository<SalesOrdersDetail> SalesOrderDetails
         {
             get
             {

@@ -22,6 +22,37 @@ namespace VrMobile.DAL.Services
         {
             modelBuilder.Entity<Customers>()
            .HasKey(c => c.IdCustomer);
+
+            modelBuilder.Entity<Products>()
+           .HasKey(p => p.IdProduct);
+
+            modelBuilder.Entity<Invoices>()
+            .HasKey(i => i.IdInvoice);
+
+            modelBuilder.Entity<InvoiceDetails>()
+            .HasKey(d => d.Id);
+
+            modelBuilder.Entity<DeliveryOrders>()
+            .HasKey(delivery => delivery.IdDeliveryOrder);
+
+            modelBuilder.Entity<VendorVisits>()
+          .HasKey(v => v.IdVendorVisit);
+
+            modelBuilder.Entity<SalesOrders>()
+            .HasKey(o => o.IdOrder);
+
+            modelBuilder.Entity<SalesOrdersDetail>()
+           .HasKey(d => d.Id);
+
+            modelBuilder.Entity<Payments>()
+            .HasKey(p => p.IdPayment);
+
+
+            modelBuilder.Entity<SalesOrdersDetail>().HasOne(d => d.Order).WithMany(o => o.Detail);
+
+
+
+
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

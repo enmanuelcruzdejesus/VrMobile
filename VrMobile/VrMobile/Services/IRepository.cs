@@ -12,10 +12,10 @@ namespace XamCore.Services
 
         IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> predicate);
 
-        IEnumerable<TEntity> GetLoadRerefence();
+        IEnumerable<TEntity> GetLoadRerefence(string propertyName = null);
 
 
-        IEnumerable<TEntity> GetLoadRerefence(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> GetLoadRerefence(Expression<Func<TEntity, bool>> predicate, string propertyName =null);
 
 
 

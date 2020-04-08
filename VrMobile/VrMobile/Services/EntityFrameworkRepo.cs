@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore;
 using VrMobile.Models;
 using Xamarin.Forms;
 using XamCore.Services;
@@ -40,14 +41,14 @@ namespace VrMobile.DAL.Services.Services
             return _dbContext.Set<TEntity>().Where(predicate);
         }
 
-        public IEnumerable<TEntity> GetLoadRerefence()
+        public IEnumerable<TEntity> GetLoadRerefence(string propertyName = null)
         {
-            throw new NotImplementedException();
+            return _dbContext.Set<TEntity>().Include(propertyName).ToList();
         }
 
-        public IEnumerable<TEntity> GetLoadRerefence(Expression<Func<TEntity, bool>> predicate)
+        public IEnumerable<TEntity> GetLoadRerefence(Expression<Func<TEntity, bool>> predicate, string propertyName =null)
         {
-            throw new NotImplementedException();
+            return _dbContext.Set<TEntity>().Where(predicate).Include(propertyName).ToList();
         }
 
         public int Insert(TEntity entity)

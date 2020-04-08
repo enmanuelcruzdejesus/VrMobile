@@ -13,7 +13,7 @@ namespace VrMobile
     {
 
 
-        string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}";
+        string BASE_URL = "https://apiquickbooksdemo20200402140023.azurewebsites.net/api/{0}/{1}/{2}";
 
         private Database _db;
         private RestApiService _restApi;
@@ -90,7 +90,7 @@ namespace VrMobile
             get
             {
                if(_restApi == null)
-                    _restApi = new RestApiService(new ResilienceHttpClient(Uri));
+                    _restApi = new RestApiService(new ResilienceHttpClient(BASE_URL));
 
                 return _restApi;
             }

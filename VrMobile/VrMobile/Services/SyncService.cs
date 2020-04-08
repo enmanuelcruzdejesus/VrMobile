@@ -18,7 +18,6 @@ namespace VrMobile.Services
                 app.Db.Customers.BulkMerge(data);
 
 
-
             return recordsAffected;
         }
 
@@ -93,14 +92,14 @@ namespace VrMobile.Services
         public  async Task<int> SyncSalesOrders()
         {
             var app = (App)App.Current;
-            var data = app.Db.SalesOrders.Get(o => o.Status == 2);
+            var data = app.Db.SalesOrders.GetLoadRerefence(o => o.Status == 2, "Detail").ToList();
             var recordsAffected = 0;
-            foreach (var item in data)
-            {
-                var detail = app.Db.SalesDetails.Get(d => d.IdOrder == item.IdOrder).ToList();
-                item.SalesOrdersDetails = detail;
+            //foreach (var item in data)
+            //{
+            //    var detail = app.Db.SalesOrderDetails.Get(d => d.IdOrder == item.IdOrder).ToList();
+            //    item.SalesOrdersDetails = detail;
                
-            }
+            //}
 
          
             if (data != null)
@@ -129,8 +128,6 @@ namespace VrMobile.Services
                 var r = await app.RestApi.UploadPayments(data);
                 recordsAffected = r.Count();
             }
-
-
 
 
             return recordsAffected;
