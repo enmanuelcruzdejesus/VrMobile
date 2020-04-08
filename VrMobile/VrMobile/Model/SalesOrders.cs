@@ -1,16 +1,19 @@
 ﻿
-using SQLite;
+
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace VrMobile.Models
 {
+
     public class SalesOrders
     {
-        [PrimaryKey]
-        [AutoIncrement]
+        [Key]
+
         public int IdOrder { get; set; }
         public string IdOrderRef { get; set; }
         public int IdVendor { get; set; }
@@ -26,10 +29,13 @@ namespace VrMobile.Models
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
         public decimal TotalAmt { get; set; }
-        public string Status { get; set; }
+        public string TranStatus { get; set; }
+        public int Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime LastUpdate { get; set; }
 
-        public List<SalesOrdersDetail> SalesOrdersDetails { get; set; }
+
+
+        public virtual ICollection<SalesOrdersDetail> Detail { get; set; }
     }
 }
